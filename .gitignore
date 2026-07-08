@@ -1,0 +1,55 @@
+# Variáveis de ambiente locais
+.env
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Cache e arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Banco de dados local SQLite
+# Bancos preenchidos não devem ser versionados por causa da anonimização
+# e da privacidade obrigatórias do projeto.
+*.db
+*.sqlite
+*.sqlite3
+data/db/*
+!data/db/.gitkeep
+
+# Planilhas reais com dados sensíveis
+# Arquivos de entrada com dados clínicos ou identificáveis devem permanecer
+# apenas no ambiente local e nunca ser versionados.
+data/input/*.xlsx
+data/input/*.xls
+data/input/*.xlsm
+data/input/*.csv
+!data/input/.gitkeep
+
+# Imagens reais e exames locais
+# Imagens ultrassonográficas e exames reais não devem ser versionados por causa
+# da anonimização e da privacidade obrigatórias do projeto.
+data/imagens/*
+data/exames/*
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.dicom
+*.dcm
+
+# Exemplos permitidos: somente arquivos anonimizados ou sintéticos.
+!data/exemplos/
+!data/exemplos/.gitkeep
+!data/exemplos/*.xlsx
+!data/exemplos/*.csv
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
